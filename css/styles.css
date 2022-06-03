@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: brown;
+    text-shadow: 3px 3px crimson;
+    
+  }
+  body{
+    background-image: url(../img/img\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ntn{
+    margin-left: 100px;
+    font-size: large;
+    font-weight: bold;
+  }
+  
