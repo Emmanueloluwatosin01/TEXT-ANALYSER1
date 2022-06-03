@@ -111,3 +111,26 @@ Expected Output:"gabriel is a *****";
 
 
 
+# SITE NAME
+TEXT ANALYSER
+# NAME OF CONTRIBUTORS
+EMMANUEL ENYAH AMOS
+## BRIEF DESCRIPTION OF THE PROJECT
+It's a Text Analyser website and it helps in testing if our code would pass or fail.
+## TECHNOLOGIES USED
+* HTML
+* CSS
+* BOOTSTRAP
+* jAVASCRIPT
+* README.md
+## LONGER DESCRIPTION OF THE PROJECT
+The site contains information about TESTING  website. How it really looks like. The website 
+### KNOWN BUGS
+1. some difficulties putting my javascripts together
+2. Some function were hard to fit in cos it was used wrongly
+3. It was hard testing if it would fail or pass
+## WEBPAGE LINK
+https://
+## CONTACT INFORMATION
+* 08141856186
+* oluwatosinmanny01@gmail.com
