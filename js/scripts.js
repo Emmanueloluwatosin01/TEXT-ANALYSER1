@@ -96,25 +96,25 @@ function numberOfOccurrencesInText(word, text) {
   return wordCount;
 }
 
-// function topThreeWords(text) {
-//   if (errorCheck(text)) {
-//     return 0;
-//   }
-//   text = filterSentence2(text);
-//   let textArray = text.split(" ");
-//   let maxWord = ""
-//   let maxCount = 0;
-//   let result = "";
-//   textArray.forEach(function (element) {
-//     let wordCount = numberOfOccurrencesInText(element, text);           
-//     if (wordCount > maxCount) {
-//       maxCount = wordCount;
-//       maxWord = element;
-//     }                                                          
-//     result = maxWord + " " + maxCount;
-//   });
-//   return result;
-// }
+function topThreeWords(text) {
+  if (errorCheck(text)) {
+    return 0;
+  }
+  text = filterSentence2(text);
+  let textArray = text.split(" ");
+  let maxWord = ""
+  let maxCount = 0;
+  let result = "";
+  textArray.forEach(function (element) {
+    let wordCount = numberOfOccurrencesInText(element, text);           
+    if (wordCount > maxCount) {
+      maxCount = wordCount;
+      maxWord = element;
+    }                                                          
+    result = maxWord + " " + maxCount;
+  });
+  return result;
+}
 
 
 
