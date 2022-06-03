@@ -45,11 +45,11 @@ function maskOffensiveWord(passage) {
   return retArray.join(' ');
 }
 
-// function wordMatch(wordOne, wordTwo) {
-//   wordOne = filterSentence2(wordOne)
-//   wordTwo = filterSentence2(wordTwo)
-//   return wordTwo.toLowerCase().includes(wordOne.toLowerCase()) && wordOne.toLowerCase() === wordTwo.toLowerCase();
-// }
+function wordMatch(wordOne, wordTwo) {
+  wordOne = filterSentence2(wordOne)
+  wordTwo = filterSentence2(wordTwo)
+  return wordTwo.toLowerCase().includes(wordOne.toLowerCase()) && wordOne.toLowerCase() === wordTwo.toLowerCase();
+}
 
 // function boldPassage(word, text) {
 //   if (errorCheck2(word, text)) {
