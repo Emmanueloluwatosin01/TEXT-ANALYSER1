@@ -13,9 +13,34 @@
 </head>
 
 <body>
-  
+  <div class="container">
+    <div id="result1">
+    </div><br><br>
+    <form id="output2">
+      <div class="form-group">
+        <h1>Text Analyser</h1>
+        <br>
+        <h2>Input a text passage :</h2>
+        <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
+        <h2> Enter a word to make bold in the passage:</h2>
+        <input type="text" id="word" name="word" class="form-control">
+        <br>
+        <button type="submit" class="btn btn-success" id="submitButton">Submit</button>
+      </div>
+    </form>
+
   </div>
-  
+  <div class="ntn">
+    <p>Total Word Count: <span id="total-count"></span></p>
+    <br>
+    <p>Selected Word Count: <span id="totalcount"></p>
+    <br>
+    <p>Bolded-Passasge: <span id="bolded-passage"></span></p>
+    <br>
+    <p>Top 3 word: <span id="top3Word"></span> </p>
+    <br>
+  </div>
+
 </body>
 </div>
 
