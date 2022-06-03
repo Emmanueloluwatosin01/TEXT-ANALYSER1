@@ -14,19 +14,19 @@ function filterSentence2(sentence) {
 }
 
 
-// function wordCounter(text) {
-//   if( errorCheck(text)) {
-//     return 0;
-//   }
-//   let wordCount = 0;
-//   const wordArray = text.split(" ");
-//   wordArray.forEach(function(element) {
-//     if (!Number(element)) {
-//       wordCount++;
-//     }
-//   });
-//   return wordCount;
-// }
+function wordCounter(text) {
+  if( errorCheck(text)) {
+    return 0;
+  }
+  let wordCount = 0;
+  const wordArray = text.split(" ");
+  wordArray.forEach(function(element) {
+    if (!Number(element)) {
+      wordCount++;
+    }
+  });
+  return wordCount;
+}
 
 
 // function maskOffensiveWord(passage) {
