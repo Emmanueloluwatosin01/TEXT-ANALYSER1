@@ -51,36 +51,36 @@ function wordMatch(wordOne, wordTwo) {
   return wordTwo.toLowerCase().includes(wordOne.toLowerCase()) && wordOne.toLowerCase() === wordTwo.toLowerCase();
 }
 
-// function boldPassage(word, text) {
-//   if (errorCheck2(word, text)) {
-//     return "";
-//   }
-//   word = word.toLowerCase();
-//   text = text.toLowerCase();
-//   let offensiveArray = ["biffaroni", "loopdaloop", "zoinks", "muppeteer"];
-//   let htmlString = "<p>";
-//   text = filterSentence2(text);
-//   text = maskOffensiveWord(text);
-//   let textArray = text.split(" ");
-//   textArray.forEach(function (element, index) {
-//     if (wordMatch(element, word)) {
-//       htmlString = htmlString.concat("<b>" + element + "</b>");
-//     }
-//     else if (element.includes(word) && element !== word) {
-//       newElement = element.replace(word, "<b>" + word + "</b>");
-//       htmlString = htmlString.concat(newElement);
-//     }
-//     else {
-//       htmlString = htmlString.concat(element);
-//     }
-//     offensiveArray.forEach(function (off) {
-//       if (index !== (textArray.length - 1 && textArray.length - 1 !== off)) {
-//         htmlString = htmlString.concat(" ");
-//       }
-//     });
-//   });
-//   return htmlString + "</p>";
-// }
+function boldPassage(word, text) {
+  if (errorCheck2(word, text)) {
+    return "";
+  }
+  word = word.toLowerCase();
+  text = text.toLowerCase();
+  let offensiveArray = ["biffaroni", "loopdaloop", "zoinks", "muppeteer"];
+  let htmlString = "<p>";
+  text = filterSentence2(text);
+  text = maskOffensiveWord(text);
+  let textArray = text.split(" ");
+  textArray.forEach(function (element, index) {
+    if (wordMatch(element, word)) {
+      htmlString = htmlString.concat("<b>" + element + "</b>");
+    }
+    else if (element.includes(word) && element !== word) {
+      newElement = element.replace(word, "<b>" + word + "</b>");
+      htmlString = htmlString.concat(newElement);
+    }
+    else {
+      htmlString = htmlString.concat(element);
+    }
+    offensiveArray.forEach(function (off) {
+      if (index !== (textArray.length - 1 && textArray.length - 1 !== off)) {
+        htmlString = htmlString.concat(" ");
+      }
+    });
+  });
+  return htmlString + "</p>";
+}
 
 // function numberOfOccurrencesInText(word, text) {
 //   if (errorCheck2(word, text)) {
