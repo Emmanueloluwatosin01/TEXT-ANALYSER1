@@ -29,21 +29,21 @@ function wordCounter(text) {
 }
 
 
-// function maskOffensiveWord(passage) {
-//   passage = passage.toLowerCase();
-//   let offensiveArray = ["biffaroni", "loopdaloop", "zoinks", "muppeteer"];
-//   let retArray = [];
-//   let textArray = passage.split(" ");
-//   textArray.forEach(function (element) {
-//     offensiveArray.forEach(function (oElement) {
-//       if (element === oElement) {
-//         element = "*****";
-//       }
-//     })
-//     retArray.push(element);
-//   });
-//   return retArray.join(' ');
-// }
+function maskOffensiveWord(passage) {
+  passage = passage.toLowerCase();
+  let offensiveArray = ["biffaroni", "loopdaloop", "zoinks", "muppeteer"];
+  let retArray = [];
+  let textArray = passage.split(" ");
+  textArray.forEach(function (element) {
+    offensiveArray.forEach(function (oElement) {
+      if (element === oElement) {
+        element = "*****";
+      }
+    })
+    retArray.push(element);
+  });
+  return retArray.join(' ');
+}
 
 // function wordMatch(wordOne, wordTwo) {
 //   wordOne = filterSentence2(wordOne)
