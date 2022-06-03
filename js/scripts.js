@@ -82,19 +82,19 @@ function boldPassage(word, text) {
   return htmlString + "</p>";
 }
 
-// function numberOfOccurrencesInText(word, text) {
-//   if (errorCheck2(word, text)) {
-//     return 0;
-//   }
-//   let textArray = text.split(" ");
-//   let wordCount = 0;
-//   textArray.forEach(function (element) {
-//     if (wordMatch(element, word)) {
-//       wordCount++;
-//     }
-//   });
-//   return wordCount;
-// }
+function numberOfOccurrencesInText(word, text) {
+  if (errorCheck2(word, text)) {
+    return 0;
+  }
+  let textArray = text.split(" ");
+  let wordCount = 0;
+  textArray.forEach(function (element) {
+    if (wordMatch(element, word)) {
+      wordCount++;
+    }
+  });
+  return wordCount;
+}
 
 // function topThreeWords(text) {
 //   if (errorCheck(text)) {
