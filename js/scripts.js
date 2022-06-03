@@ -119,33 +119,33 @@ function topThreeWords(text) {
 
 
 
-// // User Interface Logic
-// $(document).ready(function () {
-//   $("#output2").submit(function (event) {
-//     event.preventDefault();
-//     let sentence1 = $("#text-passage").val();
-//     let word = $("#word").val();
-//     let boldedPassage = boldPassage(word, sentence1);
-//     let maskedBoldPassage = maskOffensiveWord(boldedPassage)
-//     $("#bolded-passage").html(maskedBoldPassage);
-//     let topmostWord = topThreeWords(sentence1);
-//     let topmostWord1 = topmostWord.replace(/\s|[0-9]/g, "");
-//     topmostWord1 = topmostWord1.trim();
-//     let regexd = new RegExp(topmostWord1 ,"gi");
-//     let sentence2 = sentence1.replace(regexd, "");
-//     let secondWord = topThreeWords(sentence2);
-//     let secondWord1 = secondWord.replace(/\s|[0-9]/g, "");
-//     secondWord1 = secondWord1.trim();
-//     let regexd2 = new RegExp(secondWord1 ,"gi");
-//     let sentence3 = sentence2.replace(regexd2, "");
-//     let thirdWord = topThreeWords(sentence3);
-//     $("#top3Word").html(topmostWord + "<br>" + secondWord + "<br>" + thirdWord);
-//     $("#total-count").text(wordCounter(sentence1));
-//     $("#totalcount").text(numberOfOccurrencesInText(word,sentence1));
-//      sentence1 = $("#text-passage").val("");
-//      word = $("#word").val("");
-//   });
+// User Interface Logic
+$(document).ready(function () {
+  $("#output2").submit(function (event) {
+    event.preventDefault();
+    let sentence1 = $("#text-passage").val();
+    let word = $("#word").val();
+    let boldedPassage = boldPassage(word, sentence1);
+    let maskedBoldPassage = maskOffensiveWord(boldedPassage)
+    $("#bolded-passage").html(maskedBoldPassage);
+    let topmostWord = topThreeWords(sentence1);
+    let topmostWord1 = topmostWord.replace(/\s|[0-9]/g, "");
+    topmostWord1 = topmostWord1.trim();
+    let regexd = new RegExp(topmostWord1 ,"gi");
+    let sentence2 = sentence1.replace(regexd, "");
+    let secondWord = topThreeWords(sentence2);
+    let secondWord1 = secondWord.replace(/\s|[0-9]/g, "");
+    secondWord1 = secondWord1.trim();
+    let regexd2 = new RegExp(secondWord1 ,"gi");
+    let sentence3 = sentence2.replace(regexd2, "");
+    let thirdWord = topThreeWords(sentence3);
+    $("#top3Word").html(topmostWord + "<br>" + secondWord + "<br>" + thirdWord);
+    $("#total-count").text(wordCounter(sentence1));
+    $("#totalcount").text(numberOfOccurrencesInText(word,sentence1));
+     sentence1 = $("#text-passage").val("");
+     word = $("#word").val("");
+  });
 
-//   $(".ntn").show();
-// });
+  $(".ntn").show();
+});
 
